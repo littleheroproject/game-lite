@@ -1,4 +1,7 @@
 /book
 /mdbook
+/wiki
 .vscode
 .DS_Store
+/src
+/venv
