@@ -9,4 +9,4 @@ title = "简化手册"
 site-url = "/docs/"
 
 [build]
-create-missing=false
+create-missing=true
