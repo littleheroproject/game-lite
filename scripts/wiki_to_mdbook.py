@@ -11,7 +11,7 @@ os.mkdir('src')
 
 link_re = re.compile(r'([^!]|^)\[(.+?)\]\((.+?)(#.+?)?\)')
 def replace_link(text):
-    return link_re.sub("\g<1>[\g<2>](\g<3>.md\g<4>)", text)
+    return link_re.sub("\g<1>[\g<2>](./\g<3>.md\g<4>)", text)
 
 for fn in os.listdir('wiki'):
     if os.path.isdir(fn):
