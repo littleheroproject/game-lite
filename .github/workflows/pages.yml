@@ -29,6 +29,7 @@ jobs:
       - run: git clone https://github.com/littleheroproject/game-lite.wiki.git wiki
       - run: python3 scripts/wiki_to_mdbook.py
       - run: ./mdbook/mdbook build
+      - run: rm book/*.md#*
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
