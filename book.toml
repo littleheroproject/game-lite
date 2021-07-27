@@ -7,3 +7,6 @@ title = "简化手册"
 
 [output.html]
 site-url = "/docs/"
+
+[build]
+create-missing=false
